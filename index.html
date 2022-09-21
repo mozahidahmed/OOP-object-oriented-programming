@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <style>
+    
+    .container {
+  
+      
+
+    }
+
+    .box-container{
+        margin-top: 12px;      
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .input1 {
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+       
+
+
+    }
+
+    .input2 {
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        
+       
+    }
+
+    
+
+   th{
+        border:1px solid black ;
+        padding: 10px;
+        background-color: #00ace6;
+        width: 100px;
+    }
+   td{
+        /* border:1px solid black ; */
+        background-color: #b3ecff;
+        padding: 10px;
+        width: 100px;
+    }
+    table{
+        /* border: 1px solid black; */
+        margin-top: 30px;
+    }
+
+    .h6{
+        color: crimson;
+        font-weight: bold;
+
+    }
+</style>
+</head>
+<body>
+
+
+    <!-- .................................................................. -->
+    <div class="container">
+        <!-- ................................................. -->
+       
+       
+       
+       <div class="box-container">
+      
+        <div class="inputbox">
+            <h1>Buy coffee,You's Choose</h1>
+            <div class="h6">product name</div>
+            <select class="input1"  id="product" placeholder="write document" >
+               <option id="inputbox1"  value="Espresso">Espresso</option> 
+               <option id="inputbox1"  value="Cappuccino">Cappuccino</option> 
+               <option id="inputbox1"  value="Latte">Latte</option> 
+            
+           </select><br>
+
+           <div class="h6">add  milk</div>
+            <select class="input1"  id="milk" placeholder="write document" >
+               <option id="inputbox1"  value="60">60</option> 
+               <option id="inputbox1"  value="75">75</option> 
+               <option id="inputbox1"  value="100">100</option> 
+            
+           </select><br>
+            <div class="h6">add  cream</div>
+            <select class="input1"  id="cream" placeholder="write document" >
+               <option id="inputbox1"  value="80">80</option> 
+               <option id="inputbox1"  value="90">90</option> 
+               <option id="inputbox1"  value="125">125</option> 
+            
+           </select><br>
+           <div class="h6">add  lattle</div>
+            <select class="input1"  id="latte" placeholder="MILK" >
+               <option id="inputbox1"  value="100">100</option> 
+               <option id="inputbox1"  value="125">125</option> 
+               <option id="inputbox1"  value="150">150</option> 
+            
+           </select><br>
+
+           <div class="h6">  Quantity</div>
+            <select class="input1"  id="quantity" placeholder="MILK" >
+               <option id="inputbox1"  value="1">1</option> 
+               <option id="inputbox1"  value="2">2</option> 
+               <option id="inputbox1"  value="3">3</option> 
+               <option id="inputbox1"  value="4">4</option> 
+               <option id="inputbox1"  value="5">5</option> 
+               <option id="inputbox1"  value="6">6</option> 
+               <option id="inputbox1"  value="7">7</option> 
+               <option id="inputbox1"  value="7">8</option> 
+               <option id="inputbox1"  value="9">9</option> 
+               <option id="inputbox1"  value="10">10</option> 
+            
+           </select><br>
+
+
+
+        
+
+
+
+            <button class="input1" id="add-button" >BUY NOW</button>
+        </div>
+        <!-- ................................................. -->
+
+
+
+        <div class="">
+            <h1>Bill / Receipt</h1>
+        <table>
+            
+           <thead>
+            <tr>
+                
+                <th>Product/Add-on</th>
+                <th>Milk</th>
+                <th>Cream</th>
+                <th>Latte</th>
+                <th>quantity</th>
+                <th>price</th>
+            </tr>
+           </thead>
+
+
+            <tbody id="document-container">
+            </tbody>
+
+           
+
+
+
+        </table>
+     <div class="" id="">
+        <p>Total price $<span id="deposit-output">00</span></p>
+
+     </div>
+
+
+
+
+
+
+
+ 
+    
+
+
+
+        </div>
+
+
+
+
+       </div>
+<!-- ................................................... -->
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</body>
+</html>
